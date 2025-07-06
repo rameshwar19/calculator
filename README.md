@@ -1,6 +1,6 @@
 # calculator
 
-```javascript
+```javascripts
 // Simple calculator functions in JavaScript
 function add(a, b) {
   return a + b;
