@@ -3,16 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #22223b;
+        }
+        header {
+            background: #4a4e69;
+            color: #fff;
+            padding: 2em 0 1.5em 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(74,78,105,0.08);
+        }
+        .hero {
+            max-width: 700px;
+            margin: 2em auto 1.5em auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(74,78,105,0.10);
+            padding: 2.5em 2em;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.3em;
+            color: #22223b;
+        }
+        .hero p {
+            font-size: 1.25em;
+            color: #4a4e69;
+            margin-bottom: 1.5em;
+        }
+        .cta-btn {
+            background: linear-gradient(90deg, #9f86c0 0%, #5f6caf 100%);
+            color: #fff;
+            padding: 0.9em 2.2em;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.15em;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(159,134,192,0.15);
+            transition: background 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .cta-btn:hover {
+            background: linear-gradient(90deg, #5f6caf 0%, #9f86c0 100%);
+        }
+        .features {
+            max-width: 900px;
+            margin: 2.5em auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            justify-content: center;
+        }
+        .feature-card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(74,78,105,0.08);
+            padding: 2em 1.5em;
+            flex: 1 1 260px;
+            min-width: 260px;
+            max-width: 300px;
+            text-align: center;
+        }
+        .feature-card h3 {
+            color: #4a4e69;
+            margin-bottom: 0.5em;
+        }
+        .feature-card p {
+            color: #22223b;
+            font-size: 1em;
+        }
+        .premium-badge {
+            display: inline-block;
+            background: linear-gradient(90deg, #fbb034 0%, #ffdd00 100%);
+            color: #fff;
+            font-weight: bold;
+            border-radius: 12px;
+            padding: 0.2em 0.8em;
+            font-size: 0.95em;
+            margin-bottom: 1em;
+            letter-spacing: 0.5px;
+        }
+        footer {
+            margin-top: 3em;
+            color: #888;
+            font-size: 0.95em;
+            text-align: center;
+            padding: 1.5em 0 1em 0;
+        }
+        @media (max-width: 900px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Calculator App</h1>
-    <p>
-        <a href="calculator.html" style="font-size:1.2em; color:#4a4e69; text-decoration:none;">
-            Open Calculators
-        </a>
-    </p>
-    <footer style="margin-top:2em; color:#888; font-size:0.9em;">
-        &copy; 2024 Calculator App. All rights reserved.
+    <header>
+        <div style="font-size:2em; font-weight:700; letter-spacing:1px;">Calculator App</div>
+        <div style="font-size:1.1em; margin-top:0.5em;">Your all-in-one advanced calculator suite</div>
+    </header>
+    <section class="hero">
+        <span class="premium-badge">PREMIUM</span>
+        <h1>Unlock Advanced Calculations</h1>
+        <p>
+            Experience the next generation of calculators with a sleek interface, powerful features, and premium tools for professionals and students alike.
+        </p>
+        <a href="calculator.html" class="cta-btn">Open Calculators</a>
+    </section>
+    <section class="features">
+        <div class="feature-card">
+            <h3>Scientific Calculator</h3>
+            <p>Perform complex scientific calculations with ease, including trigonometry, logarithms, and more.</p>
+        </div>
+        <div class="feature-card">
+            <h3>History & Memory</h3>
+            <p>Access your calculation history and save important results for future reference.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Unit Converter</h3>
+            <p>Convert between units for length, weight, temperature, and more—all in one place.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Premium Themes</h3>
+            <p>Customize your calculator with exclusive premium themes and layouts.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Ad-Free Experience</h3>
+            <p>Enjoy a clean, distraction-free interface with no ads—only for premium users.</p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Calculator App. All rights reserved. | <a href="#" style="color:#4a4e69;text-decoration:none;">Privacy Policy</a>
     </footer>
 </body>
 </html>
